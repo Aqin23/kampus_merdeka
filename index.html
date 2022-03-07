@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>
+            Form Aqin
+        </title>
+    </head>
+    <body>
+        <form id="formulir">
+        <table align="center" cellpadding="15" cellspacing="0">
+            <thead>
+                <tr >
+                    <th colspan="2">Kalkulator</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td widht="30%">Angka 1</td>
+                    <td> 
+                        <input type="text" name="a1" value="">
+                    </td>
+                </tr>
+                               
+                <tr>
+                    <td>Angka 2</td>
+                    <td> 
+                        <input type="text" name="a2" value="">                                  
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Hasil</td>
+                    <td> 
+                        <input type="text" name="hasil" value="" disabled>
+                    </td>
+                </tr>
+
+               
+            </tbody>
+            <tfoot>
+                <tr >
+                    <th colspan="2" >
+                        <input type="button" onclick="hitung(this.value)" value="+"> 
+                        <input type="button" onclick="hitung(this.value)" value="-"> 
+                        <input type="button" onclick="hitung(this.value)" value="x"> 
+                        <input type="button" onclick="hitung(this.value)" value="/"> 
+                        <input type="button" onclick="hitung(this.value)" value="^"> 
+                        <input type="button" onclick="batal()" value="Batal"> 
+                    </th>
+            </tfoot>
+        </table>
+        </form>
+    </body>
+    <script language="javascript" src="js/js.js"></script>
+</html>
