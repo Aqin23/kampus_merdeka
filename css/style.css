@@ -1,0 +1,26 @@
+*{
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+   background: url(https://cdn.kibrispdr.org/data/wallpaper-angka-angka-8.jpg);
+}
+
+table{
+    margin-top: 3.5cm;
+    width: 30%;
+    border: 0;
+    
+}
+th{
+    background-image: linear-gradient(to right, rgb(34, 147, 152 ), rgb(233, 8, 102));
+    color: white;
+}
+tr{
+    background-color: rgba(253, 253, 253, 0.750);
+}
+input[type=button]:hover {
+    background-color:black;
+    color: white;
+  }
