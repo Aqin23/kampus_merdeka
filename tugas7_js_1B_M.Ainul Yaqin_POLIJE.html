@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Info Gempa</title>
+        <h1 >Informasi Gempa</h1>
+        <h2  >Internasional </h2>
+    </head>
+    <body>
+        
+        
+
+        <script>
+            
+            class Gempa {
+              constructor(lokasi, skala) {
+                this.lokasi = lokasi;
+                this.skala = skala;
+              }
+              dampak() {
+                let dampak;
+                if (this.skala >= 0 && this.skala <= 2) {
+                  dampak = "Dampaknya tidak terasa";
+                } else if (this.skala > 2 && this.skala <= 4) {
+                  dampak = "Dampaknya Bangunan Retak-Retak";
+                } else if (this.skala > 4 && this.skala <= 6) {
+                  dampak = "Dampaknya Bangunan Roboh";
+                } else if (this.skala > 6) {
+                  dampak = "Dampaknya Bangunan Roboh dan Berpotensi Tsunami";
+                } else {
+                  dampak = "tidak ada gempa";
+                }
+                document.write(`Lokasi Gempa : ${this.lokasi}
+                  <br/> Skala : ${this.skala}
+                  <br/> Dampak : ${dampak} <hr>`);
+              }
+            }
+            let ind= new Gempa("Indonesia", 4.6);
+            let usa= new Gempa("Amerika", 8.4);
+            let arg= new Gempa("Argentina", 2.1);
+            let rus= new Gempa("Rusia", 4.3);
+            let chn= new Gempa("China", 6);
+            let jpn= new Gempa("Japan", 5.9);
+            let kor= new Gempa("Korea", 7.7);
+            let msr= new Gempa("Mesir", 5.6);
+            let ita= new Gempa("Italy", 9.6);
+            let ger= new Gempa("German", 0);
+            
+            ind.dampak();
+            usa.dampak();
+            arg.dampak();
+            rus.dampak();
+            chn.dampak();
+            jpn.dampak();
+            kor.dampak();
+            msr.dampak();
+            ita.dampak();
+            ger.dampak();
+          </script>
+          
+          <style>
+            body{
+                margin: 0 12cm;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            h1, h2{
+                text-align: center;
+                margin: 10px;
+            }
+        </style>
+          
+    </body>
+</html>
