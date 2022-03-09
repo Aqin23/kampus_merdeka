@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Tugas Jquery</title>
+        <style>
+            *{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-align: center;
+                font-weight: bold;
+            }
+            body{
+                margin: 1cm 4.5cm;
+            }
+            table {
+                margin-bottom: 1cm;
+            }
+            img {
+
+                min-width: 200px;
+                min-height: 200px;
+                background-color: #ffc82f;
+                cursor: pointer;
+            }
+            #pesan{
+                display: none;
+            }
+            button {
+                width: 100%;
+                background-color: #ffbb00;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+              
+              button:hover {
+                background-color: #a07809;
+              }
+                
+        </style>
+
+    </head>
+    <body>
+        <h1>Aqin'site</h1>
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td> <img src="" id="img-kuda"> </td>
+                    <td> <img src="" id="img-sapi"> </td>
+                    <td> <img src="" id="img-gajah"> </td>
+                    <td> <img src="" id="img-anjing"> </td>
+                    <td> <img src="" id="img-ayam"> </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Kuda</td>
+                    <td>Sapi</td>
+                    <td>Gajah</td>
+                    <td>Anjing</td>
+                    <td>Ayam</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="flip">NF Computer</button>
+        <div id="pesan">
+            <p >NF COMPUTER adalah bagian dari grup Nurul Fikri yang telah dipercaya oleh
+                masyarakat Indonesia di bidang pendidikan dan peningkatan sumber daya manusia selama lebih
+                dari 24 tahun. Alumni-alumninya telah berkiprah dan diakui kualitas kerja dan integritasnya
+                oleh dunia usaha.</p>
+            <p>NF COMPUTER dirintis sejak tahun 1994 dan merupakan sebuah lembaga di bidang pendidikan dan
+                pelatihan IT <i>(Information Technology)</i>. Kami berkomitmen menjadi partner perusahaan
+                Anda dalam mengembangkan kemampuan serta keahlian SDM di bidang IT. Dengan komitmen
+                tersebut, kami mempersiapkan tim pengajar yang professional dan berpengalaman di bidang IT.
+            </p>
+            <p>Di <strong>Era Industri 4.0</strong> saat ini, teknologi informasi berkembang sangat cepat,
+                oleh karena itu pengembangan sumber daya manusia di bidang IT menjadi sebuah kebutuhan yang
+                perlu diprioritaskan. NF COMPUTER menjadi jawaban yang tepat atas kebutuhan pengembangan
+                kompetensi IT. Sehingga kami selalu berusaha untuk terus berinovasi terhadap teknologi
+                terbaru.</p>
+        </div>
+        <br/>
+        <button class="flip">Visi dan Misi</button>
+        <div id="pesan">
+            <p><strong>Visi</strong><br>
+                Menjadi institusi pelatihan yang kompeten dan profesional di bidang pendidikan teknologi
+                informasi dan komunikasi di berbagai wilayah indonesia.</p>
+            <p><strong>Misi</strong><br>
+                Membangun, memelihara dan mengembangkan institusi pelatihan bisnis berdaya saing tinggi,
+                berkarakter profesional, kompeten, mengedepankan integritas dan tanggung jawab sosial,
+                dengan mengembangkan dan menyediakan produk produk pendidikan dan pelatihan teknologi
+                informasi dan komunikasi prima.</p>
+        </div>
+        <br/>
+        <button class="flip">Deskripsi Bisnis</button>
+        <div id="pesan">
+            NF COMPUTER menyelenggarakan Pelatihan dan Pendidikan di bidang Teknologi Informasi dan Komunikasi
+                    (IT Training) yang dibagi menjadi lima produk.
+                    Pelatihan (training) ini dibagi dalam beberapa kategori produk yaitu :
+                    <ul>
+                        <li>
+                            Public Class, merupakan short course bidang TIK (Teknologi Informasi dan Komunikasi) yang
+                            berbasis Linux maupun Windows.
+                        </li>
+                        <li>
+                            Exclusive Class, merupakan paket training yang diberikan kepada customer dengan durasi 6-8
+                            jam perhari dengan jumlah peserta minimal 2 orang dan pelaksanaan pelatihannya di NF
+                            Computer.
+                        </li>
+                        <li>
+                            In House/In Company Training, yaitu pelatihan TIK yang dikustomisasi untuk kebutuhan
+                            perusahaan-perusahaan
+                        </li>
+                    </ul>
+                    Paket bisnis khusus dibagi ke dalam beberapa kategori produk yang dikelola secara profesional oleh
+                    NF COMPUTER yaitu :
+                    <ul>
+                        <li>
+                            Kerjasama Pendidikan Sekolah, yaitu Divisi khusus pendidikan sekolah dimana NF COMPUTER
+                            bekerjasama dalam hal : Kerjasama pembangunan Lab Komputer, Pengajaran Komputer dan
+                            kombinasi antara keduanya.
+                        </li>
+                        <li>
+                            Usulan Produk lain:&nbsp;Produk-produk yang menurut lokasi diminati oleh pasar tapi belum
+                            ada dalam daftar produk pelatihan dan pendidikan NF COMPUTER, dapat diajukan oleh cabang
+                            untuk menjadi produk yang dipertimbangkan sebagai produk dan akan menjadi bagian dari
+                            penyelenggaraan pelatiahan dan pendidikan di cabang tersebut pada periode yang dianggap
+                            tepat oleh NF COMPUTER.
+                        </li>
+                    </ul>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $(".flip").on("click", function(){
+                    $(this).next().slideToggle("slow")
+                })
+
+                $("#img-kuda").on("click", function () {
+                    $(this).replaceWith(`<img src="https://www.google.com/logos/fnbx/animal_sounds/horse.png" alt="">`)
+                    $("<audio></audio>").attr({
+                        'src': 'audio/kuda.mp3',
+                        'volume': 0.4,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                })
+
+                $("#img-sapi").on("click", function () {
+                    $(this).replaceWith(`<img src="https://www.google.com/logos/fnbx/animal_sounds/cow.png" alt="">`)
+                    $("<audio></audio>").attr({
+                        'src': 'audio/sapi.mp3',
+                        'volume': 0.4,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                })
+                $("#img-gajah").on("click", function () {
+                    $(this).replaceWith(`<img src="https://www.google.com/logos/fnbx/animal_sounds/elephant.png" alt="">`)
+                    $("<audio></audio>").attr({
+                        'src': 'audio/gajah.mp3',
+                        'volume': 0.4,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                })
+                $("#img-anjing").on("click", function () {
+                    $(this).replaceWith(`<img src="https://www.google.com/logos/fnbx/animal_sounds/dog.png" alt="">`)
+                    $("<audio></audio>").attr({
+                        'src': 'audio/anjing.mp3',
+                        'volume': 0.4,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                })
+                $("#img-ayam").on("click", function () {
+                    $(this).replaceWith(`<img src="https://www.google.com/logos/fnbx/animal_sounds/chicken.png" alt="">`)
+                    $("<audio></audio>").attr({
+                        'src': 'audio/ayam.mp3',
+                        'volume': 0.4,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                })
+            })
+            </script>
+    </body>
+
+</html>
