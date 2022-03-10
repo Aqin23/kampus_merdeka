@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar RWD Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link href="css/jquery-ui.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <style>
+    .alert{
+        background-color: rgb(20, 20, 20);
+        
+    }
+    .sd2{
+        text-align: right;
+
+    }
+</style>  
+  <script>
+        $( function() {
+          $( "#tabs" ).tabs();
+        } );
+        </script>
+</head>
+<body>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://wallpapercave.com/wp/wp2503324.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/originals/57/00/1f/57001f90c2fac53263580bb5c7223277.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://wallpapercave.com/wp/wp2503396.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <!-- ini baris kedua -->
+        <div >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="d-flex container-fluid">
+              
+          
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                 
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- ini baris ketiga -->
+        <div class="row">
+            <div class="col-md-2">
+               
+                <h1>Sidebar 1</h1>
+                <h2>Sidebar 1</h2>
+                <h3>Sidebar 1</h3>
+                <h4>Sidebar 1</h4>
+                <h5>Sidebar 1</h5>
+                <h6>Sidebar 1</h6>
+                
+            </div>
+            <div class="col-md-8">
+                <div id="tabs">
+                    <ul>
+                      <li><a href="#tabs-1">Tabs1</a></li>
+                      <li><a href="#tabs-2">Tabs2</a></li>
+                      <li><a href="#tabs-3">Tabs3</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                      <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Sejarah POLIJE
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Politeknik Negeri Jember awal berdirinya dimulai adanya program pemerintah untuk mengembangkan pendidikan politeknik di Indonesia pada tahun 1980. Ide munculnya pendidikan Politeknik Pertanian berasal dari pemikiran konsorsium ilmu-ilmu pertanian pada tahun 1983, dan ditindaklanjuti dengan pembukaan Politeknik Pertanian di 6 kota yaitu: (1) Jember (2) Lampung (3) Payakumbuh (4) Samarinda (5) Ujung Pandang (6) Kupang. Konsep pembangunan Politeknik Pertanian dilaksanakan secara embrional dan struktural dititipkan kepada Universitas Negeri setempat yaitu: Universitas Jember, Universitas Lampung, Universitas Andalas, Universitas Mulawarman, Universitas Hasanudin dan Universitas Nusa Cendana. Selanjutnya untuk memantapkan realisasi rencana pendidikan Politeknik Pertanian di kota Jember, Konsultan dari Asian Development Bank (ADB) Dr. Robert Maxwell dan Ir. Arifin dari Departemen Pendidikan dan Kebudayaan dan didampingi oleh Tim dari Universitas Jember yang dipimpin oleh Ir. Soehardjo Widodo, MS melakukan studi kelayakan secara mendalam di wilayah Kabupaten Jember.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Visi dan Misi
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  <strong> VISI 2020-2024</strong> 
+                                  <br/> “Mendukung Visi Dan Misi Kementerian Pendidikan Dan Kebudayaan Dengan Mewujudkan Pendidikan Tinggi Vokasi Yang Unggul Dan Berdaya Saing Dibidang Teknologi Terapan Yang Menghasilkan Lulusan Berkarakter”
+                                  
+                                 <br/> MEWUJUDKAN VISI 2020-2035
+                                 <br/> “Menjadi Politeknik Unggul Di Asia Tahun 2035”
+                                  
+                                 <br/><strong>MISI</strong>
+                                 <br/> Meningkatkan Pendidikan Terapan Yang Inovatif Dan Berdaya Saing;
+                                 <br/> Meningkatkan Penelitian Terapan, Pengabdian Kepada Masyarakat Dan Kewirausahaan Untuk Menghasilkan Nilai Tambah Produk Inovasi;
+                                 <br/> Mewujudkan Tata Kelola Polije Yang Lebih Baik Dalam Rangka Reformasi Birokrasi (Good Polije Governance);
+                                 <br/> Mengembangkan Kerjasama Tingkat Nasional Maupun Internasional.
+                              </div>
+                            </div>
+                          </div>
+                         
+                        </div>
+                  </div>
+                  <div id="tabs-2">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Jurusan</th>
+                            
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table-active">
+                            <th scope="row">1</th>
+                            <td>Teknologi Informas<</td>
+                
+                
+                          </tr>
+                          <tr>
+                            <th scope="row" >2</th>
+                            <td>Teknil Otomotif</td>
+                
+                
+                          </tr>
+                          <tr class="table-primary">
+                            <th scope="row">3</th>
+                            <td>Kesehatan</td>
+                
+                
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+                <div id="tabs-3">
+                  <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                      <div class="card-header">TUJUAN</div>
+                      <div class="card-body">
+                       
+                        <p class="card-text"><li>Peningkatan akses, mutu, dan relevansi pendidikan vokasi;</li>
+                          <li>Peningkatan kuantitas dan kualitas penelitian terapan dan pengabdian pada masyarakat, serta produk inovasi;</li>
+                          <li>Peningkatan kualitas penjaminan mutu kegiatan tridharma;</li>
+                         </div>
+                    </div>
+                    <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+                      <div class="card-header">Sasaran</div>
+                      <div class="card-body">
+                        <p>Memperluas akses, meningkatkan mutu, dan relevansi pendidikan vokasi;
+                         <li> Meningkatkan kuantitas serta kualitas Penelitian terapan, Pengabdian Pada Masyarakat, serta produk inovasi;</li>>
+                         <li> Meningkatkan kualitas penjaminan mutu kegiatan tridharma;</li>>
+                         <li> Mewujudkan tata kelola pendidikan dalam rangka reformasi birokrasi;</li>>
+                         <li> Meningkatkan kualitas proses dan hasil kegiatan kemahasiswaan dan kewirausahaan; dan</li>>
+                         <li> Mewujudkan kerjasama saling menguntungkan dibidang pembelajaran, riset, teknologi, serta bidang lainnya baik di level nasional maupun internasional.</li>>
+                        <p class="card-text">
+                          
+                      </div>
+                    </div>                   
+                          
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                  
+                  
+            </div>
+            
+        </div>
+          <div class="col-md-2">
+                       
+                        <h1>Sidebar 1</h1>
+                        <h2>Sidebar 1</h2>
+                        <h3>Sidebar 1</h3>
+                        <h4>Sidebar 1</h4>
+                        <h5>Sidebar 1</h5>
+                        <h6>Sidebar 1</h6>
+                        
+                    </div>
+        <!-- ini baris keempat -->
+        <div class="row">
+          <div class="col-md-12">
+              <div class="alert alert-secondary text-center" role="alert">
+                  Design By: M.AinulYaqin ©2022 Kampus Merdeka
+              </div>
+          </div>
+      </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</html>
